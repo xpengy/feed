@@ -1,9 +1,9 @@
 import renderAtom from "./atom1";
 import renderJSON from "./json";
 import renderRSS from "./rss2";
-import { Author, Extension, FeedOptions, Item } from "./typings";
+import type { Author, Extension, FeedOptions, Item } from "./typings/index";
 
-export { Author, Extension, FeedOptions, Item };
+export type { Author, Extension, FeedOptions, Item };
 
 /**
  * Class used to generate Feeds
@@ -58,3 +58,6 @@ export class Feed {
    */
   public json1 = (): string => renderJSON(this);
 }
+
+// If you want to provide a default export as well, you can add:
+export default Feed;

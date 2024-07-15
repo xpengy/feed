@@ -1,7 +1,7 @@
 import * as convert from "xml-js";
 import { generator } from "./config";
 import { Feed } from "./feed";
-import { Author, Category, Enclosure, Item } from "./typings";
+import { Author, Category, Enclosure, Extension, Item } from "./typings";
 import { sanitize } from "./utils";
 
 /**
@@ -51,7 +51,7 @@ export default (ins: Feed) => {
     base.rss.channel.image = {
       title: { _text: options.title },
       url: { _text: options.image },
-      link: { _text: sanitize(options.link) }
+      link: { _text: sanitize(options.link) },
     };
   }
 
@@ -104,8 +104,8 @@ export default (ins: Feed) => {
     base.rss.channel["atom:link"] = {
       _attributes: {
         href: sanitize(options.hub),
-        rel: "hub"
-      }
+        rel: "hub",
+      },
     };
   }
 
@@ -116,7 +116,7 @@ export default (ins: Feed) => {
   base.rss.channel.item = [];
 
   ins.items.map((entry: Item) => {
-    let item: any = {};
+    const item: any = {};
 
     if (entry.title) {
       item.title = { _cdata: entry.title };
@@ -149,6 +149,18 @@ export default (ins: Feed) => {
     if (entry.content) {
       isContent = true;
       item["content:encoded"] = { _cdata: entry.content };
+    }
+
+    if (entry.extensions) {
+      entry.extensions.map((e: Extension) => {
+        if (e.objects instanceof Date) {
+          item[e.name] = e.objects.toUTCString();
+        } else if (typeof e.objects === "object") {
+          item[e.name] = JSON.stringify(e.objects);
+        } else {
+          item[e.name] = e.objects.toString();
+        }
+      });
     }
     /**
      * Item Author

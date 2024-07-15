@@ -27,6 +27,8 @@ exports[`rss 2.0 should generate a valid feed 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -64,6 +66,8 @@ exports[`rss 2.0 should generate a valid feed with audio 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -77,6 +81,8 @@ exports[`rss 2.0 should generate a valid feed with audio 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -90,6 +96,8 @@ exports[`rss 2.0 should generate a valid feed with audio 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -103,6 +111,8 @@ exports[`rss 2.0 should generate a valid feed with audio 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -140,6 +150,8 @@ exports[`rss 2.0 should generate a valid feed with enclosure 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -153,6 +165,8 @@ exports[`rss 2.0 should generate a valid feed with enclosure 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -166,6 +180,8 @@ exports[`rss 2.0 should generate a valid feed with enclosure 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -203,6 +219,8 @@ exports[`rss 2.0 should generate a valid feed with image properties 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -216,6 +234,8 @@ exports[`rss 2.0 should generate a valid feed with image properties 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>
@@ -252,6 +272,8 @@ exports[`rss 2.0 should generate a valid feed with video 1`] = `
             <pubDate>Wed, 10 Jul 2013 23:00:00 GMT</pubDate>
             <description><![CDATA[This is an article about Hello World.]]></description>
             <content:encoded><![CDATA[Content of my item]]></content:encoded>
+            <_item_extension_1>{\\"about\\":\\"just an item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_1>
+            <_item_extension_2>{\\"about\\":\\"just a second item extension example\\",\\"dummy1\\":\\"example\\"}</_item_extension_2>
             <author>janedoe@example.com (Jane Doe)</author>
             <author>joesmith@example.com (Joe Smith)</author>
             <category>Grateful Dead</category>

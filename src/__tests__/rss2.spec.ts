@@ -158,6 +158,38 @@ describe("rss 2.0", () => {
     const actual = sampleFeed.rss2();
     expect(actual).toMatchSnapshot();
   });
+  it("should generate a valid feed with extensions containing primitive values", () => {
+    const testFeed = new Feed({
+      title: "Test Feed",
+      description: "This is a test feed",
+      link: "http://example.com/",
+      id: "http://example.com/",
+      copyright: "All rights reserved",
+    });
+    testFeed.addItem({
+      title: "Test Item",
+      link: "http://example.com/test",
+      date: new Date("2023-01-01T00:00:00Z"),
+      extensions: [
+        {
+          name: "testString",
+          objects: "This is a string value",
+        },
+        {
+          name: "testNumber",
+          objects: 12345,
+        },
+        {
+          name: "testDate",
+          objects: new Date("2023-01-01T00:00:00Z"),
+        },
+      ],
+    });
+    const actual = testFeed.rss2();
+    expect(actual).toContain("<testString>This is a string value</testString>");
+    expect(actual).toContain("<testNumber>12345</testNumber>");
+    expect(actual).toContain("<testDate>Sun, 01 Jan 2023 00:00:00 GMT</testDate>");
+  });
   it("should generate a valid feed with video", () => {
     const sampleFeed = new Feed({
       title: "Feed Title",

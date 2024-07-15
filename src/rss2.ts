@@ -1,5 +1,5 @@
 import * as convert from "xml-js";
-import { generator } from "./config";
+import { generator } from "./config/index.js";
 import { Feed } from "./feed";
 import { Author, Category, Enclosure, Extension, Item } from "./typings";
 import { sanitize } from "./utils";

@@ -1,6 +1,7 @@
 {
   "name": "feed",
   "version": "4.2.2",
+  "type": "module",
   "description": "Feed is a RSS, Atom and JSON feed generator for Node.js, making content syndication simple and intuitive!",
   "homepage": "https://github.com/jpmonette/feed",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
@@ -25,7 +26,6 @@
   "dependencies": {
     "xml-js": "^1.6.11"
   },
-  "type": "module",
   "devDependencies": {
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.26.0",

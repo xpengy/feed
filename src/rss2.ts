@@ -11,6 +11,7 @@ export default (ins: Feed) => {
   const { options } = ins;
   let isAtom = false;
   let isContent = false;
+  let isDublinCore = false;
 
   const base: any = {
     _declaration: { _attributes: { version: "1.0", encoding: "utf-8" } },
@@ -153,6 +154,9 @@ export default (ins: Feed) => {
 
     if (entry.extensions) {
       entry.extensions.map((e: Extension) => {
+        if (e.name.startsWith("dc:")) {
+          isDublinCore = true;
+        }
         if (e.objects instanceof Date) {
           item[e.name] = e.objects.toUTCString();
         } else if (typeof e.objects === "object") {
@@ -208,8 +212,11 @@ export default (ins: Feed) => {
     base.rss.channel.item.push(item);
   });
 
-  if (isContent) {
+  if (isContent || isDublinCore) {
     base.rss._attributes["xmlns:dc"] = "http://purl.org/dc/elements/1.1/";
+  }
+
+  if (isContent) {
     base.rss._attributes["xmlns:content"] = "http://purl.org/rss/1.0/modules/content/";
   }
 

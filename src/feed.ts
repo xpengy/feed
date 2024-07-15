@@ -1,7 +1,7 @@
-import renderAtom from "./atom1";
-import renderJSON from "./json";
-import renderRSS from "./rss2";
-import type { Author, Extension, FeedOptions, Item } from "./typings/index";
+import renderAtom from "./atom1.js";
+import renderJSON from "./json.js";
+import renderRSS from "./rss2.js";
+import type { Author, Extension, FeedOptions, Item } from "./typings/index.js";
 
 export type { Author, Extension, FeedOptions, Item };
 

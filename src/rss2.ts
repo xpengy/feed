@@ -1,8 +1,8 @@
 import * as convert from "xml-js";
 import { generator } from "./config/index.js";
-import { Feed } from "./feed";
-import { Author, Category, Enclosure, Extension, Item } from "./typings";
-import { sanitize } from "./utils";
+import { Feed } from "./feed.js";
+import { Author, Category, Enclosure, Extension, Item } from "./typings/index.js";
+import { sanitize } from "./utils.js";
 
 /**
  * Returns a RSS 2.0 feed

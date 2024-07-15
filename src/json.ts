@@ -1,5 +1,5 @@
-import { Feed } from "./feed";
-import { Author, Category, Extension, Item } from "./typings";
+import { Feed } from "./feed.js";
+import { Author, Category, Extension, Item } from "./typings/index.js";
 
 /**
  * Returns a JSON feed
